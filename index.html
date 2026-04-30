@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Girls in ICT - Digital Student Registration Form">
+    <title>Girls in ICT - Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Animated Background Bubbles -->
+    <div class="background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="header">
+                <!-- Using the provided logo -->
+                <img src="logo.png" alt="Girls in ICT Logo" class="logo">
+                <h1>Welcome, Student!</h1>
+                <p>Register to join the digital experience</p>
+            </div>
+
+            <form id="registrationForm" action="https://formsubmit.co/yayahkamara765@gmail.com" method="POST">
+                <!-- Replace the email below with your ACTUAL email address! -->
+                <input type="hidden" name="_subject" value="New Student Registration - Girls in ICT">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="input-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="Full Name" placeholder="e.g. Jane Doe" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="institution">Institution / School Name</label>
+                    <input type="text" id="institution" name="Institution" placeholder="e.g. Tech High School" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="class">Class</label>
+                    <input type="text" id="class" name="Class" placeholder="e.g. Grade 11" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="contact">Personal / WhatsApp Contact</label>
+                    <input type="tel" id="contact" name="Contact" placeholder="e.g. +1 234 567 8900" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="Email" placeholder="e.g. jane@example.com" required>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span>Complete Registration</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Form functionality script removed to allow direct POST submission -->
+</body>
+
+</html>
